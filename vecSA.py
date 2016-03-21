@@ -2,7 +2,7 @@ import numpy as np
 import scipy.stats as stats
 from pysal.weights.Distance import DistanceBand
 
-PERMUTATIONS = 999
+PERMUTATIONS = 999999
 
 class VecMoran:
     """Moran's I Global Autocorrelation Statistic For Vectors
@@ -195,9 +195,12 @@ if __name__ == '__main__':
     vmo = VecMoran(vecs, wo)
     vmd = VecMoran(vecs, wd)
     print vmo.I
+    print vmo.p_rand
+    print vmo.p_z_sim
     print vmd.I
-    print vmo.z_rand
-    print vmd.z_rand
+    print vmd.p_rand
+    print vmd.p_z_sim
+
 
 '''
     def w(self, vectors, beta = -1.5):
