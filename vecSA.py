@@ -1,3 +1,5 @@
+_author_ = "Taylor Oshan tayoshan@gmail.com, Levi Wolf levo.john.wolf@gmail.com"
+
 import numpy as np
 import scipy.stats as stats
 from pysal.weights.Distance import DistanceBand
